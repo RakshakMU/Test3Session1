@@ -1,1 +1,81 @@
 
+Breakpoint 1, main () at p3original.c:31
+31  {
+(gdb) n
+34    input_n_and_r(&n,&r);
+(gdb) s
+input_n_and_r (n=0x7fff52a462e8, r=0x7fff52a462ec) at p3original.c:4
+4     printf("enter the values of n and r\n");
+(gdb) n
+enter the values of n and r
+5     scanf("%d%d",n,r);
+(gdb) n
+4 5
+6   }
+(gdb) n
+main () at p3original.c:35
+35    c=ncr(n,r);
+(gdb) s
+ncr (n=4, r=5) at p3original.c:9
+9     long a=1,b=1,c=1,d;
+(gdb) 
+11    for (int i=1;i<=n;i++)
+(gdb) n
+13        a=a*i;
+(gdb) n
+11    for (int i=1;i<=n;i++)
+(gdb) n
+13        a=a*i;
+(gdb) n
+11    for (int i=1;i<=n;i++)
+(gdb) n
+13        a=a*i;
+(gdb) n
+11    for (int i=1;i<=n;i++)
+(gdb) n
+13        a=a*i;
+(gdb) n
+11    for (int i=1;i<=n;i++)
+(gdb) n
+15    for (int i=1;i<=(n-r);i++)
+(gdb) n
+19    for (int i=1;i<=r;i++)
+(gdb) n
+21        c=c*i;
+(gdb) n
+19    for (int i=1;i<=r;i++)
+(gdb) n
+21        c=c*i;
+(gdb) n
+19    for (int i=1;i<=r;i++)
+(gdb) n
+21        c=c*i;
+(gdb) n
+19    for (int i=1;i<=r;i++)
+(gdb) n
+21        c=c*i;
+(gdb) n
+19    for (int i=1;i<=r;i++)
+(gdb) n
+21        c=c*i;
+(gdb) n
+19    for (int i=1;i<=r;i++)
+(gdb) 
+23    d=a/(c*b);
+(gdb) n
+24    return d;
+(gdb) n
+25  }
+(gdb) 
+main () at p3original.c:36
+36    output(n,r,c);
+(gdb) s
+output (n=4, r=5, result=0) at p3original.c:28
+28    printf("the vlaue of %d.c.%d  is %d",n,r,result);
+(gdb) n
+29  }
+(gdb) n
+main () at p3original.c:37
+37    return 0;
+(gdb) n
+38  }(gdb

@@ -1,1 +1,302 @@
 
+ gcc -g p1original.c
+ ./a.out
+enter the value of fraction numbers
+4
+5
+6
+7
+the sum of two fractions is 58/35 gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+ gcc -g p1orginal.c
+gcc: error: p1orginal.c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+exit status 1
+ gcc -g p1original.c
+ ./a.out
+enter the value of fraction numbers
+1
+2
+34
+4
+the sum of two fractions is 9/1 gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x896: file p1original.c, line 26.
+(gdb) r
+Starting program: /home/runner/Test3Session1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p1original.c:26
+26  {
+(gdb) n
+28    input(&a,&b,&c,&d);
+(gdb) s
+input (num1=0x7ffc879eb210, den1=0x7ffc879eb214, num2=0x7ffc879eb218, 
+    den2=0x7ffc879eb21c) at p1original.c:4
+4     printf("enter the value of fraction numbers\n");
+(gdb) n
+enter the value of fraction numbers
+5     scanf("%d%d%d%d",num1,den1,num2,den2);
+(gdb) n
+n
+6   }
+(gdb) n
+main () at p1original.c:29
+29    add(a,b,c,d,&num,&den);
+(gdb) s
+add (num1=773851424, den1=22056, num2=773850720, den2=22056, 
+    num3=0x7ffc879eb220, den3=0x7ffc879eb224) at p1original.c:9
+9     *num3=(num1*den2)+(num2*den1);
+(gdb) n
+10    *den3=den1*den2;
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+16        *num3=*num3/i;
+(gdb) n
+17        *den3=*den3/i;
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+16        *num3=*num3/i;
+(gdb) n
+17        *den3=*den3/i;
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+16        *num3=*num3/i;
+(gdb) n
+17        *den3=*den3/i;
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) s
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+ gcc -g p1orginal.c
+gcc: error: p1orginal.c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+exit status 1
+ ./a.out
+enter the value of fraction numbers
+4
+5
+6
+7
+the sum of two fractions is 58/35 
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x896: file p1original.c, line 26.
+(gdb) r
+Starting program: /home/runner/Test3Session1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p1original.c:26
+26  {
+(gdb) n
+28    input(&a,&b,&c,&d);
+(gdb) n
+enter the value of fraction numbers
+ gcc -g p1orginal.c
+gcc: error: p1orginal.c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+exit status 1
+ ./a.out
+enter the value of fraction numbers
+1
+2
+3
+4
+the sum of two fractions is 5/4 
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x896: file p1original.c, line 26.
+(gdb) r
+Starting program: /home/runner/Test3Session1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p1original.c:26
+26  {
+(gdb) n
+28    input(&a,&b,&c,&d);
+(gdb) n
+enter the value of fraction numbers
+3
+4
+5
+6
+29    add(a,b,c,d,&num,&den);
+(gdb) s
+add (num1=3, den1=4, num2=5, den2=6, num3=0x7ffceba93570, den3=0x7ffceba93574)
+    at p1original.c:9
+9     *num3=(num1*den2)+(num2*den1);
+(gdb) n
+10    *den3=den1*den2;
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+16        *num3=*num3/i;
+(gdb) n
+17        *den3=*den3/i;
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) 
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) 
+12    for( i=2;i<=*den3;i++)
+(gdb) n
+14      if(*num3%i==0&&*den3%i==0)
+(gdb) n
+ gcc -g p1orginal.c
+gcc: error: p1orginal.c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+exit status 1
+ 

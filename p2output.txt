@@ -1,1 +1,55 @@
-
+Breakpoint 1, main () at p2original.c:38
+38    a=input_fraction();
+(gdb) s
+input_fraction () at p2original.c:8
+8   {
+(gdb) n
+10    printf("enter the fraction one a/b in the form a_b\n");
+(gdb) n
+enter the fraction one a/b in the form a_b
+11    scanf("%d%d",&a.num,&a.den);
+(gdb) n
+2 4 
+12    return a;
+(gdb) n
+13  }
+(gdb) n
+main () at p2original.c:39
+39    b=input_fraction();
+(gdb) s
+input_fraction () at p2original.c:8
+8   {
+(gdb) n
+10    printf("enter the fraction one a/b in the form a_b\n");
+(gdb) n
+enter the fraction one a/b in the form a_b
+11    scanf("%d%d",&a.num,&a.den);
+(gdb) n
+2 5 
+12    return a;
+(gdb) n
+13  }
+(gdb) n
+main () at p2original.c:40
+40    c=input_fraction();
+(gdb) n
+enter the fraction one a/b in the form a_b
+1 5 
+41    d=Largest_fraction(a,b,c);
+(gdb) s
+Largest_fraction (f1=..., f2=..., f3=...) at p2original.c:17
+17    if (((f1.num/f1.den)>(f2.num/f2.den)) && (f1.num/f1.den)>(f3.num/f3.den))
+(gdb) n
+21    else if (f2.num/f2.den > f3.num/f3.den)
+(gdb) n
+27      a=f3;
+(gdb) n
+29    return a;
+(gdb) n
+30  }
+(gdb) n
+main () at p2original.c:42
+42    output(a,b,c,d);
+(gdb) n
+the largest of the fractions 2/4 , 2/5 , 1/5 is 1/5 
+43  }
